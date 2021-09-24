@@ -1,0 +1,582 @@
+/* font-family: 'Montserrat', sans-serif; font-family: 'Raleway', sans-serif;*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.top_header{
+    display: flex;
+    background-color: #efefef;
+    padding: 15px 0;
+}
+.top_header h4{
+    font-size: 14px;
+    color: #7f7f7f;
+    font-family: 'Montserrat', sans-serif;
+}
+.top_header ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.top_header ul li{
+    list-style: none;
+}
+.top_header ul li a{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #7f7f7f;
+    font-family: 'Montserrat', sans-serif;
+}
+.top_header ul li a:hover{
+   color: #e28711;
+}                         
+
+/* top header end */
+.navbar .nav-item .nav-link{
+    margin: 0;
+    padding: 0;
+    margin: 5px 10px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #222121;
+    margin-left: 15px;
+    text-transform: uppercase;
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+}
+.navbar .nav-item .nav-link:hover{  
+    color: #e28711;
+}
+.navbar .navbar-nav .nav-link::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    bottom: -2px;
+    background-color: #ff9b1a;
+    transition: .3s all ease-in-out;
+}
+.navbar .navbar-nav .nav-link:hover::before{
+    width: 47%;
+}
+.navbar .navbar-nav .nav-link::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    bottom: -2px;
+    background-color: #ff9b1a;
+    transition: .3s all ease-in-out;
+}
+.navbar .navbar-nav .nav-link:hover::after{
+    width: 47%;
+}
+.header_btn, .banner_btn_1, .banner_btn_2,  .menu_btn, .bitcoin_btn{
+    margin: 0;
+    padding: 0;
+    background-color: #ff9b1a;
+    text-transform: uppercase;
+    transition: .4s all ease-in-out;
+    font-size: 11px;
+    color: white;
+    border-radius: 30px;
+    padding: 5px 12px;
+    font-family: 'Raleway', sans-serif;
+}
+.header_btn, .banner_btn_1, .banner_btn_2,  .menu_btn, .bitcoin_btn:focus{
+    box-shadow: none !important;
+}
+.header_btn:hover{
+    color: white;
+    background-color: #e28711;
+}
+.menu_btn{
+    display: none;
+}
+
+.banner{
+    background-image: url("img/banner.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.banner_row{
+    min-height: 80vh;
+}
+.banner_row h1{
+    font-size: 30px;
+    color: white;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.million{
+    display: flex;
+    justify-content: space-around;
+}
+.first_millino h3, .second_millino h3, .third_millino h3{
+    color: white;
+    font-size: 14px;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+.first_millino p, .second_millino p, .third_millino p{
+    color: white;
+    font-size: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+.first_millino span, .second_millino span{
+    font-size: 17px;
+    margin-right: 5px;
+}
+.third_millino span{
+    font-size: 20px;
+}
+.banner_btn_1{
+    margin-right: 10px;
+    padding: 5px 25px;
+}
+.banner_btn_1:hover{
+    color: white;
+    background: transparent;
+    border:  1px solid #ff9b1a;
+}
+.banner_btn_2{
+    background: transparent;
+    border:  1px solid #ff9b1a;
+}
+.banner_btn_2:hover{
+    background-color: #ff9b1a;
+    color: white;
+}
+.seving_content{
+    border: 1px solid #aca9a9;
+    padding: 50px 15px;
+    position: relative;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .4s all ease-in-out;
+    z-index: 0;
+
+}
+.seving_content:hover{
+    background-image: url("img/bit_coen.png");
+    background-position: top;
+}
+.seving_content::before{
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+    z-index: -1;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#caa106+0,df6402+100&0.85+0,0.85+100 */
+    background: -moz-linear-gradient(top,  rgba(202,161,6,0.85) 0%, rgba(223,100,2,0.85) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(202,161,6,0.85) 0%,rgba(223,100,2,0.85) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(202,161,6,0.85) 0%,rgba(223,100,2,0.85) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9caa106', endColorstr='#d9df6402',GradientType=0 ); /* IE6-9 */
+
+
+}
+.seving_content:hover::before{
+    display: inherit;
+}
+.seving_content i{
+    color: #e28711;
+    font-size: 40px;
+}
+.seving_content h3{
+    font-size: 18px;
+    margin: 10px 0;
+    color: #545454;
+    font-family: 'Montserrat', sans-serif;
+}
+.seving_content p{
+    font-size: 16px;
+    padding: 0px 10px;
+    color: #545454;
+    font-family: 'Montserrat', sans-serif;
+}
+.seving_content:hover i{
+    color: white;
+}
+.seving_content:hover h3{
+    color: white;
+}
+.seving_content:hover p{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.coin_heading span, .contact span, .person span, .blog span, .profile span, .form span{
+    display: block;
+    width: 10%;
+    height: 2px;
+    background-color: #fb8f2c;
+    margin: auto;
+}
+.coin_heading h2{
+    text-transform: uppercase;
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+}
+.coin_heading p{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+.coin img{
+    width: 19%;
+}
+.coin h3{
+    margin: 15px 0;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+.coin p{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+.animate{
+    color: #ff9b1a;
+}
+.bitcoin_btn{
+    border:  1px solid #e28711;
+    font-size: 12px;
+    color: white;
+    padding: 6px 16px;
+    transition: .4s all ease-in-out;
+    font-family: 'Montserrat', sans-serif;
+}
+.bitcoin_btn:hover{
+    background: transparent;
+    color: black;
+    
+}
+
+.section{
+    background-image: url("img/banner2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 70vh;
+}
+.iphone{
+    position: absolute;
+    bottom: 0;
+    width: 20%;
+    left: 20%;
+}
+.section h2{
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+.section span{
+    width: 50px;
+    height: 2px;
+    background-color: #e28711;
+    display: block;
+}
+.section ul{
+    margin: 0;
+    padding: 0;
+    padding: 10px 0;
+}
+.section ul li{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+.box_div{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #e28711;
+    margin-right: 20px;
+    transform: rotate(45deg);
+}
+.section_text{
+    width: 400px;
+}
+.section_text h6{
+    color: white;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+}
+.section_text p{
+    color: white;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.count{
+    background-color: #ff9b1a;
+}
+.count h5{
+    color: white;
+    font-size: 19px;
+    font-weight: 600;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.count h6{
+    margin-top: 15px;
+    font-size: 15px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.bit_position{
+    padding: 100px;
+    position: relative;
+}
+.safe{
+    position: absolute;
+    top: 10%;
+    left: 30%;
+}
+.app{
+    position: absolute;
+    top: 38%;
+    left: 25%;
+}
+.walet{
+    position: absolute;
+    top: 65%;
+    left: 30%;
+}
+.export{
+    position: absolute;
+    top: 10%;
+    right: 30%;
+}
+.insert{
+    position: absolute;
+    top: 38%;
+    right: 25%;
+}
+.buys{
+    position: absolute;
+    top: 65%;
+    right: 30%;
+}
+.safe .icon, .export .icon, .app .icon, .walet .icon, .insert .icon, .buys .icon{ 
+    border: 1px solid #f05154;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(45deg);
+    border-radius: 5px;
+    margin: auto;
+}
+.safe .icon i, .export .icon i, .app .icon i, .walet .icon i, .insert .icon i, .buys .icon i{
+    transform: rotate(-45deg);
+    color: #f05154;
+}
+.safe p, .export p, .app p, .walet p, .insert p, .buys p{
+    margin-top: 5px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+.export .icon, .walet .icon{
+    border:  1px solid #43c5ca;
+}
+.export .icon i, .walet .icon i{
+    color: #43c5ca;
+}
+.app .icon, .insert .icon{
+    border:  1px solid #63cd68;
+}
+.app .icon i, .insert .icon i{
+    color: #63cd68;
+}
+.person1 img{
+    width: 60%;
+}
+.person h2{
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+.person1 h5{
+    margin: 0;
+    margin-top: 15px;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.person1 h6{
+    margin-top: 8px;
+    color: #e28711;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form{
+    background-image: url("img/banner3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.form h4{
+    color: white;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+.form input, .form textarea{
+    background: transparent;
+}
+.form input:focus, .form textarea:focus{
+    background: transparent;
+    box-shadow: none;
+}
+.form input::placeholder, .form textarea::placeholder{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.form input[type="submit"]{
+    text-transform: uppercase;
+    background-color: #e28711;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    padding: 3px 25px;
+    border-radius: 50px;
+    font-family: 'Montserrat', sans-serif;
+    transition: .4s all ease-in-out;
+    border: none;
+    border: 1px solid #fb8f2c;
+}
+.form form input[type="submit"]:hover{
+   background: transparent;
+}
+
+.profile h2{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+.profile_pic{
+    width: 70px;
+    margin: auto;
+}
+.profile_pic img{
+   width: 100%;
+   border-radius: 50%;
+}
+.profile h6{
+    margin: 0;
+    font-size: 12px;
+    margin-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+.profile h5{
+    font-size: 10px;
+    color: #fb8f2c;
+    font-family: 'Montserrat', sans-serif;
+}
+.blog h2{
+    text-transform: uppercase;
+    font-size: 23px;
+    font-family: 'Montserrat', sans-serif;
+}
+.footer{
+    border-top: 3px solid #e28711;
+    padding: 15px 0;
+    background-color: #101010;
+}
+.footer p{
+    margin-top: 15px;
+    font-size: 14px;
+    color: white;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+}
+.footer_main{
+    display: flex;
+}
+.footer_icon{
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: .3s all ease-in-out;
+}
+.footer_icon i{
+    color: white;
+}
+.footer_icon i:hover{
+    color: #00aced;
+}
+.footer_icon:hover{
+    border: 1px solid #00aced;
+}
+.contact h6{
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+.contact span{
+    margin-left: 0;
+}
+.contact ul{
+    margin: 0;
+    padding: 0;
+}
+.contact ul li{
+    list-style-type: none;
+    color: white;
+    font-size: 15px;
+    margin: 17px 0;
+    display: flex;
+    align-items: center;
+}
+.contact ul li i{
+    margin-right: 10px;
+    font-size: 20px;
+}
+.contact form{
+    position: relative;
+}
+.contact form input{
+    background: transparent;
+    color: white !important;
+    border-radius: 50px;
+}
+.contact form input:focus{
+    background: transparent;
+    box-shadow: none;
+}
+.contact form input::placeholder{
+    color: white;
+}
+.arrow{
+    position: absolute;
+    width: 40px;
+    height: 38px;
+    background-color: #e28711;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+}
+.arrow i{
+   color: white;
+}

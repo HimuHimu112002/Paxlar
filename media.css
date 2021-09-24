@@ -1,0 +1,208 @@
+@media(min-width:320px) and (max-width:767px){
+    .menu_btn{
+        display: inline;
+    }
+    .navbar-brand{
+       width: 45%;
+    }
+    .top_header{
+        display: none;
+    }
+    .header_btn{
+        display: none;
+    }
+    .section h2 {
+        font-size: 13px;
+        text-align: center;
+    }
+    .section span {
+        margin: auto;
+    }
+    .navbar-nav .nav-item .nav-link{
+        display: inline-block;
+       text-align: center;
+    }
+    .navbar-nav .nav-item{
+       text-align: center;
+    }
+}
+@media(min-width:320px) and (max-width:575px){
+    .banner h1{
+        font-size: 19px;
+    }
+    .section_text h6 {   
+      font-size: 12px;
+    }
+    .section_text p {   
+       font-size: 11px;
+       
+    }
+    .bit_position img{
+        width: 70%;
+    }
+    .safe {
+        top: 12%;
+        left: 18%;
+    }
+
+    .app {
+        left: 11%;
+    }
+    .walet {
+        left: 17%;
+    }
+    .export {
+        top: 13%;
+        right: 16%;
+    }
+    .insert {
+        right: 11%;
+    }
+    .buys{
+        right: 15%;
+    }
+    .safe p, .export p, .app p, .walet p, .insert p, .buys p {   
+        font-size: 9px;
+        
+    }
+    .coin h2{
+        font-size: 23px;
+    }
+    .coin p{
+        font-size: 14px;
+    }
+    .profile h2{
+        font-size: 19px;
+    }
+    .profile p{
+        font-size: 14px;
+    }
+    .count h6 {
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+}
+@media(min-width:576px) and (max-width:991px){
+    .bit_position img{
+        width: 40%;
+    }
+    .safe {
+        top: 18%;
+        left: 19%;
+    }
+
+    .app {
+        left: 15%;
+    }
+    .walet {
+        left: 18%;
+    }
+    .export {
+        top: 13%;
+        right: 19%;
+    }
+    .insert {
+        right: 15%;
+    }
+    .buys{
+        right: 18%;
+    }
+    .safe p, .export p, .app p, .walet p, .insert p, .buys p {   
+        font-size: 12px;
+        
+    }
+}
+@media(min-width:992px) and (max-width:1326px){
+    .bit_position img{
+        width: 30%;
+    }
+    .safe {
+        top: 12%;
+        left: 30%;
+    }
+
+    .app {
+        left: 25%;
+    }
+    .walet {
+        left: 30%;
+    }
+    .export {
+        top: 13%;
+        right: 30%;
+    }
+    .insert {
+        right: 25%;
+    }
+    .buys{
+        right: 30%;
+    }
+    .safe p, .export p, .app p, .walet p, .insert p, .buys p {   
+        font-size: 12px;
+        
+    }
+}
+@media(min-width:320px) and (max-width:340px){
+    .box_div {
+        width: 41px;
+        height: 28px;
+        margin-right: 10px;
+    }
+}
+@media(min-width:341px) and (max-width:360px){
+    .box_div {
+        width: 43px;
+        height: 32px;
+        margin-right: 10px;
+        transform: rotate(49deg);
+    }
+}
+@media(min-width:361px) and (max-width:380px){
+    .box_div {
+        width: 46px;
+        height: 34px;
+    }
+}
+@media(min-width:381px) and (max-width:400px){
+    .box_div {
+        width: 46px;
+        height: 34px;
+    }
+}
+@media(min-width:401px) and (max-width:420px){
+    .box_div {
+        width: 45px;
+        height: 38px;
+    }
+}
+@media(min-width:421px) and (max-width:440px){
+    .box_div {
+        width: 45px;
+        height: 38px;
+    }
+}
+@media(min-width:441px) and (max-width:450px){
+    .box_div {
+        width: 45px;
+        height: 38px;
+    }
+}
+@media(min-width:768px) and (max-width:991px){
+    .banner h1{
+        font-size: 22px;
+    }
+    .box_div {
+        width: 49px;
+        height: 42px;
+    }
+}
+@media(min-width:320px) and (max-width:991px){
+   .iphone{
+       display: none;
+   }
+   .gg{
+       margin: auto;
+   }
+}
+
+
