@@ -20,6 +20,9 @@
     <link rel="stylesheet" href="media.css">
   </head>
   <body>
+    <div class="topbtn" id="topbtn">
+      <a href="#"><i class="fas fa-chevron-up"></i></a>
+   </div>
     <section class="top_header">
         <div class="container">
             <div class="row justify-content-between">
@@ -84,15 +87,15 @@
                     <h1>Secure & <span class="animate"></span></h1>
                     <div class="million my-3">
                         <div class="first_millino">
-                            <h3><span>2.5</span>Million</h3>
+                            <h3><span class="countfect" data-num="10.5"></span>Million</h3>
                             <p>Transaction</p>
                         </div>
                         <div class="second_millino">
-                            <h3><span>2.6</span> Million</h3>
+                            <h3><span class="countfect" data-num="15.5"></span>Million</h3>
                             <p>Wallet</p>
                         </div>
                         <div class="third_millino">
-                            <h3><span>2.5</span></h3>
+                            <h3><span class="countfect" data-num="15.5"></span></h3>
                             <p>Countries Served</p>
                         </div>
                     </div>
@@ -243,7 +246,7 @@
     </section>
 
     <section class="bit_position text-center">
-        <img src="img/section_logo.png" class="img-fluid" alt="">
+        <div class="bit_img"><img src="img/section_logo.png" class="img-fluid" alt=""></div>
         <div class="safe">
           <div class="icon">
             <i class="fas fa-lock"></i>
@@ -470,6 +473,7 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="typed.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
 <script>
   var typed = new Typed('.animate', {
@@ -477,7 +481,27 @@
   typeSpeed: 60,
   loop:true,
 });
-
 </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js'></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script>
+        $('.counter').counterUp({
+            delay: 10,
+            time: 3000
+        });
+    </script>
+    <script src="js/countfect.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+      $(window).scroll(function(){
+            if($(this).scrollTop() > 40){
+               $('#topbtn').slideDown(400);
+            }else{
+              $('#topbtn').slideUp(400);
+            }
+         });
+        });
+    </script>
   </body>
 </html>

@@ -3,6 +3,25 @@
     margin: 0;
     padding: 0;
 }
+.topbtn{
+    position: fixed;
+    bottom: 0;
+    right: 29px;
+    z-index: 1;
+    padding-bottom: 25px;
+    display: none;
+}
+.topbtn i{
+    color: #fff;
+    font-size: 27px;
+    background: #f39c12;
+    padding: 16px;
+    border-radius: 50%;
+    transition: .25s all ease-in-out;
+}
+.topbtn i:hover{
+    background: #63cd68;
+}
 .top_header{
     display: flex;
     background-color: #efefef;
@@ -337,6 +356,27 @@
 .bit_position{
     padding: 100px;
     position: relative;
+}
+.bit_img{
+    animation: animate1 4s infinite;
+    animation-direction: alternate;
+}
+@keyframes animate1{
+    0%{
+        transform: rotate(360deg);
+    }
+}
+.coin_heading span, .form span, .person span, .blog span, .profile span, .section span{
+    animation: animate2 2s infinite;
+    animation-direction: alternate;
+}
+@keyframes animate2{
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 70px;
+    }
 }
 .safe{
     position: absolute;
